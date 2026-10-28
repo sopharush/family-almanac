@@ -1,18 +1,27 @@
-# The Family Almanac — static site, no build step.
+# The Family Almanac — Vite + React. Netlify reads this; leave the UI build settings blank.
 [build]
-  publish = "."
+  command = "npm run build"
+  publish = "dist"
 
-# /app -> the fill-online version
+[build.environment]
+  NODE_VERSION = "20"
+
+# /app -> the fill-online version (must come before the SPA catch-all)
 [[redirects]]
   from = "/app"
   to = "/family-almanac.html"
   status = 200
 
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
 [[headers]]
   for = "/previews/*"
-  [headers.values]
-    Cache-Control = "public, max-age=604800"
-[[headers]]
-  for = "/The-Family-Almanac.pdf"
   [headers.values]
     Cache-Control = "public, max-age=604800"
