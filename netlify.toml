@@ -1,0 +1,18 @@
+# The Family Almanac — static site, no build step.
+[build]
+  publish = "."
+
+# /app -> the fill-online version
+[[redirects]]
+  from = "/app"
+  to = "/family-almanac.html"
+  status = 200
+
+[[headers]]
+  for = "/previews/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+[[headers]]
+  for = "/The-Family-Almanac.pdf"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
