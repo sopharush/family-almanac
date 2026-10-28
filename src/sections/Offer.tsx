@@ -14,7 +14,7 @@ export default function Offer() {
   const ref = useRef<HTMLElement>(null);
   useReveal(ref);
   return (
-    <section ref={ref} className="offer section" aria-labelledby="offer-title">
+    <section ref={ref} className="offer section tex-dark" aria-labelledby="offer-title">
       <div className="wrap offer__grid">
         <div className="offer__copy">
           <p className="kicker" data-reveal>Early members</p>

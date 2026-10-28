@@ -7,7 +7,7 @@ export default function Problem() {
   const ref = useRef<HTMLElement>(null);
   useReveal(ref);
   return (
-    <section ref={ref} className="problem section">
+    <section ref={ref} className="problem section tex-light">
       <div className="wrap">
         <p className="kicker" data-reveal>The mental load</p>
         <h2 className="statement" data-mask>

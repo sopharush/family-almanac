@@ -3,7 +3,7 @@ import { scrollToHash } from '../lib/smooth';
 
 export default function Footer() {
   return (
-    <footer className="ftr">
+    <footer className="ftr tex-dark">
       <div className="wrap ftr__inner">
         <Sprig className="ftr__sprig" />
         <p className="ftr__script script">Look in the book.</p>

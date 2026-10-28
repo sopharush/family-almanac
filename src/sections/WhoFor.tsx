@@ -24,7 +24,7 @@ export default function WhoFor() {
     </ul>
   );
   return (
-    <section ref={ref} className="who section">
+    <section ref={ref} className="who section tex-light">
       <div className="wrap who__grid">
         <div>
           <p className="kicker" data-reveal>Who it’s for</p>

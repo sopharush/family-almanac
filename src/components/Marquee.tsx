@@ -19,7 +19,7 @@ export default function Marquee() {
     </ul>
   );
   return (
-    <section className="marquee" aria-label="Questions the Almanac answers">
+    <section className="marquee tex-light" aria-label="Questions the Almanac answers">
       <div className="marquee__track">{row(false)}{row(true)}</div>
       <p className="marquee__answer">The answer to all of them: <span className="script">look in the book.</span></p>
     </section>

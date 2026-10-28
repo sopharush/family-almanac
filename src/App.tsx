@@ -12,6 +12,7 @@ import HowItWorks from './sections/HowItWorks';
 import Inside from './sections/Inside';
 import AskTheBook from './sections/AskTheBook';
 import WhoFor from './sections/WhoFor';
+import Creator from './sections/Creator';
 import Offer from './sections/Offer';
 import Faq from './sections/Faq';
 import Footer from './sections/Footer';
@@ -44,6 +45,7 @@ export default function App() {
         <Inside />
         <AskTheBook />
         <WhoFor />
+        <Creator />
         <Offer />
         <Faq />
       </main>

@@ -50,7 +50,7 @@ export default function Inside() {
   }, []);
 
   return (
-    <section ref={ref} className="inside" aria-labelledby="inside-title">
+    <section ref={ref} className="inside tex-light" aria-labelledby="inside-title">
       <div className="inside__head wrap">
         <p className="kicker" data-reveal>What’s inside</p>
         <h2 id="inside-title" className="h2" data-mask>

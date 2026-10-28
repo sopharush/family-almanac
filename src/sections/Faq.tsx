@@ -13,7 +13,7 @@ export default function Faq() {
   const ref = useRef<HTMLElement>(null);
   useReveal(ref);
   return (
-    <section ref={ref} className="faq section" aria-labelledby="faq-title">
+    <section ref={ref} className="faq section tex-light" aria-labelledby="faq-title">
       <div className="wrap faq__wrap">
         <p className="kicker" data-reveal>Good to know</p>
         <h2 id="faq-title" className="h3" data-reveal>Questions, answered</h2>

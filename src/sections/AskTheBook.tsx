@@ -31,7 +31,7 @@ export default function AskTheBook() {
   }, []);
 
   return (
-    <section ref={ref} className="ask section" aria-labelledby="ask-title">
+    <section ref={ref} className="ask section tex-light" aria-labelledby="ask-title">
       <div className="wrap ask__grid">
         <div className="ask__visual">
           <PagePreview name="ask" alt="The Ask the Book page: common questions and where to find each answer" />
